@@ -1,0 +1,91 @@
+header {
+  background-color: #333;
+  padding: 20px 0;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  width: 100%;
+  padding: 0 30px;
+}
+
+.logo-brand a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav {
+  width: 35%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 5%;
+}
+
+nav li {
+  margin-right: 25px; /* Increased space between li elements */
+  position: relative;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+}
+
+nav a:hover {
+  /* Add animated underline effect */
+  color: #00bcd4;
+  transition: color 0.3s;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #00bcd4; /* Underline color */
+  transition: width 0.3s;
+}
+
+nav li:hover a::after {
+  width: 100%;
+  bottom:-10%
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+
+.active{
+  color: rgb(0, 140, 255);
+}

@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Urbanist;
+  color-scheme: light dark;
+}
+
+:root {
+  --bg-color: #f4f3ff;
+  --btn-color: #646cff;
+  --dark-color: #242424;
+  --helper-color: #99b9ff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  /* min-width: 32rem; */
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 5.4rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+p,
+li,
+label,
+input,
+textarea {
+  font-size: 1.8rem;
+  line-height: 1.56;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.06rem;
+}
+
+a {
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  color: var(--btn-color);
+  text-decoration: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+/* layout role   */
+
+.container {
+  max-width: 100%;
+  padding: 1rem 2.4rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 6.4rem;
+}
+
+.grid-two-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-four-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-four-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+  text-transform: capitalize;
+  padding: 1rem 2.2rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  background-color: var(--btn-color);
+  border-radius: 0.8rem;
+  border: 0.1rem solid transperent;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  transition: border-color 0.3s;
+  outline: none;
+  border: none;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 0.2rem var(--btn-color);
+  margin-left: 3.2rem;
+}
+
+button:hover {
+  box-shadow: inset 0 0 0 0.2rem var(--bg-color);
+}
+
+a:hover,
+a.active {
+  color: #535bf2;
+}
+
+/* registration css  */
+/* Apply some basic styles to the registration form container */
+.registration-form {
+  width: 500px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  background: #fff;
+}
+
+/* Style the main heading */
+.main-heading {
+  text-align: center;
+  /* color: #333; */
+  font-family: Urbanist;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(180deg, #981ef7 0%, #5520ac 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Style form labels and input fields */
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  /* border-radius: 4px; */
+  border-radius: 16px;
+  background: #f2f3f7;
+  outline: none;
+  color: black;
+}
+
+br {
+  margin-bottom: 15px;
+}
+
+.registration-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_div {
+  margin-top: 5%;
+}
+
+.textarea {
+  width: 100%;
+  background-color: white;
+  color: black;
+  will-change: none;
+  resize: none;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  background: #f2f3f7;
+  outline: none;
+  color: black;
+}
+
+.erro_container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eerorHead{
+    font-size: 100px;
+}
+/* hero section  */
+
+.section-hero {
+  & .grid {
+    align-items: center;
+  }
+
+  .hero-content {
+    & p {
+      margin: 2.4rem 0 4.8rem 0;
+      &:first-child {
+        margin: 0 0 1.2rem 0;
+      }
+    }
+  }
+
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    & img {
+      width: 70%;
+      height: auto;
+    }
+  }
+}
+
+/* end hero  */
+
+/* analytics section */
+
+.section-analytics {
+  margin: 9.6rem 0;
+  & .container {
+    background-color: var(--bg-color);
+    border-radius: 1rem;
+  }
+
+  & .grid {
+    color: var(--dark-color);
+
+    & .div1 {
+      text-align: center;
+      border-right: 0.2rem solid var(--dark-color);
+
+      &:last-child {
+        border: none;
+      }
+      & h2 {
+        font-size: 4.8rem;
+      }
+      & p {
+        text-transform: capitalize;
+      }
+    }
+  }
+}

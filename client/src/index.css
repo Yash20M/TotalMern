@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.cont {
+  display: flex;
+}
+
+.section-services {
+  max-width: 100vw;
+  height: 90vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+.service-head {
+  font-size: 35px;
+  margin-bottom: 3%;
+}
+
+.service_two_container {
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  flex-wrap: wrap;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_imgService {
+  width: 70%;
+  height: 100%;
+}
+
+.card {
+  width: 23%;
+  overflow: hidden;
+  border: 1px solid grey;
+  padding: 1.8%;
+  box-shadow: 1px 1px 14px 8px #2e2e2e;
+  margin-bottom: 2%;
+}
+
+.card-detials {
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+}
+
+.card-details-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.card-details-info-horizon {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.head23 {
+  font-size: 30px;
+}
+
+.adminHeader {
+  width: 15%;
+  border: 2px solid red;
+}
+
+.adminUl {
+  flex-direction: column;
+}
+
+.adminNav {
+  width: 100%;
+}
+
+.adminLi {
+  padding: 2% 3%;
+  background-color: #2e2e2e;
+  width: 100%;
+}
+
+.admin-allUsers {
+  display: block;
+  width: 80%;
+  /* border: 2px solid red; */
+  margin-inline: auto;
+}
+
+table {
+  font-size: 22px;
+  width: 100%;
+  background: #dcdada;
+  color: black;
+  border-collapse: collapse;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+thead {
+  width: 100%;
+  /* border: 2px solid black; */
+  padding: 15px ;
+}
+
+td,
+th {
+  text-align: center;
+  padding: 15px 20px;
+  border-bottom: 2px solid rgb(72, 72, 72);
+}
